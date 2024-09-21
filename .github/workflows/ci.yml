@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    types: [opened, reopened,synchronize]
+  
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: write-all # feel free to change this in PR.
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+      - run: OWNER_NAME=${{ github.event.repository.owner.login }} REPO_NAME=${{ github.event.repository.name }} GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} PR_NUMBER=${{ github.event.number }} node scripts/validate_prs.js

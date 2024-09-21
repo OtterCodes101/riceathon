@@ -1,0 +1,6 @@
+rice-setup: rice/*
+feature: feat/*
+site: website/*
+scripts: scripts/*
+fix: fix/*
+bug: bug/*
