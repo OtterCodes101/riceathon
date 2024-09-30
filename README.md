@@ -11,3 +11,10 @@ Haven't used Linux Before? Check out the [Jam](https://jams.hackclub.com/) on ho
 > The term ‘rice’ is used to describe a person’s unix deskton where ‘ricing’ is when someone is custom their desktop such as the icons, panels, or system interface. When it comes to ricing a tiling window manager though, the ricing of a user’s system becomes much more involved. Basic things such as the panel bar and application launcher must be configured by the user.
 
 See the basics of ricing [here](https://jie-fang.github.io/blog/basics-of-ricing).
+
+### How the process works
+
+1. You customize your Linux desktop (1 hour minimum)
+2. You submit it to us in a PR
+3. Get sent programmer socks!
+4. You also get entered into a gallery where people will vote on what the best rice is for bonus prizes!
