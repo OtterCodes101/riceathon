@@ -1,4 +1,4 @@
-# Rice your Linux Distro
+# Riceathon
 ![A Wayland + EndevourOS Customization](assets/unix-porn.png)
 ## Customize a Linux Distro, get programmer socks and a rubber ducky
 *A upcoming Hack Club YSWS where you can rice your Linux desktop and submit your dotfiles to get free programmer socks*
