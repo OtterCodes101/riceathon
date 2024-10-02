@@ -14,7 +14,7 @@ See the basics of ricing [here](https://jie-fang.github.io/blog/basics-of-ricing
 
 ### How the process works
 
-1. You customize your Linux desktop (1 hour minimum)
+1. You customize your Linux desktop (2 hours minimum)
 2. You submit it to us in a PR
 3. Get sent programmer socks!
 4. You also get entered into a gallery where people will vote on what the best rice is for bonus prizes!
