@@ -1,1 +1,5 @@
-[]
+[{
+"name": "neongamerbot-qk",
+"os": "nixos",
+"git": "https://github.com/NeonGamerBot-QK/nixos"
+}]
