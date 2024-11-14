@@ -22,7 +22,7 @@
 ## Checklist
 - [ ] I have filled out the form correctly
 
-- [ ] I have my PR labled correctly 
-<!-- TODO: Contributors? should this stay? -->
-- [ ] I have not already submited a rice
+- [ ] I have my PR labeled correctly 
+
+- [ ] I have not already submitted a rice
 
