@@ -1,5 +1,7 @@
-[{
-"name": "neongamerbot-qk",
-"distro": "nixos",
-"git": "https://github.com/NeonGamerBot-QK/nixos"
-}]
+[
+	{
+		"name": "neongamerbot-qk",
+		"distro": "nixos",
+		"git": "https://github.com/NeonGamerBot-QK/nixos"
+	}
+]
