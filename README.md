@@ -1,6 +1,6 @@
 # Riceathon
 ![A Wayland + EndevourOS Customization](assets/unix-porn.png)
-## Customize a Linux Distro, get programmer socks and a rubber ducky
+## Customize a Linux Distro, get programmer socks!
 *A upcoming Hack Club YSWS where you can rice your Linux desktop and submit your dotfiles to get free programmer socks*
 
 Dual Boot a [Linux Distro](https://en.wikipedia.org/wiki/Linux_distribution) on your Computer or Laptop, spend some time spicing it up with customizations and recieve some cool swag to match your desktop. 
@@ -19,3 +19,6 @@ See the basics of ricing [here](https://jie-fang.github.io/blog/basics-of-ricing
 3. You submit it to us in a PR
 4. Get sent programmer socks!
 5. You also get entered into a gallery where people will vote on what the best rice is for bonus prizes!
+
+In the form, you will need to put the email to your Slack account.
+This email must be linked to your hakatime in order for it to count.
