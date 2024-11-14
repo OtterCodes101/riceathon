@@ -16,9 +16,10 @@ See the basics of ricing [here](https://jie-fang.github.io/blog/basics-of-ricing
 
 1. You customize your Linux desktop (1 hour minimum)
 2. Record your hours with [Hackatime](https://waka.hackclub.com/)
-3. You submit it to us in a PR
-4. Get sent programmer socks!
-5. You also get entered into a gallery where people will vote on what the best rice is for bonus prizes!
+3. Submit the form to us
+4. (optionally) You submit it to us in a PR to add to the gallery for bonus prizes
+5. Get sent programmer socks!
+
 
 In the form, you will need to put the email to your Slack account.
 This email must be linked to your hakatime in order for it to count.
