@@ -15,5 +15,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '👋 Thanks for your PR!\nTo claim your free socks fill out this [form](...formlinkhere)'
+              body: '👋 Thanks for your PR!\nTo claim your free socks fill out this [form](https://forms.hackclub.com/t/joD554Crhsus)'
             })
