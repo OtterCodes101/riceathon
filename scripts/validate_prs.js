@@ -70,7 +70,7 @@ const pull_number = process.env.PR_NUMBER;
     if (Array.isArray(parsed)) {
       parsed.forEach((e) => {
         console.log(`Checking `, e);
-          if (already_thrown) return;
+        if (already_thrown) return;
         try {
           console.log(`Validation??`);
           validate(e);
