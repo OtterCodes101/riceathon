@@ -6,7 +6,7 @@
 
 _A Hack Club YSWS where you can rice your Linux desktop and submit your dotfiles to get free programmer socks_
 
-Dual Boot a [Linux Distro](https://en.wikipedia.org/wiki/Linux_distribution) on your Computer or Laptop, spend some time spicing it up with customizations and recieve some cool swag to match your desktop.
+Install a [Linux Distro](https://en.wikipedia.org/wiki/Linux_distribution) on your Computer or Laptop, spend some time spicing it up with customizations and recieve some cool swag to match your desktop.
 
 <!--Haven't used Linux Before? Check out the [Jam](https://jams.hackclub.com/) on how to dual boot and install your first Linux Distro
 commenting until the jam actually gets made -->
