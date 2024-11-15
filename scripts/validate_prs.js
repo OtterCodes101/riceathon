@@ -32,7 +32,8 @@ const pull_number = process.env.PR_NUMBER;
       labels: ["rice-setup"],
     });
   }
-  const commentError = (message) =>
+  const commentError = (message) => {
+console.debug("#commentError")
     simpleApiReq(
       `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
       "POST",
@@ -41,6 +42,7 @@ const pull_number = process.env.PR_NUMBER;
         body: message,
       },
     );
+  }
   // validate members.json file
   // schema
   // name -> GH username here (ex: John Does dotfiles or what ever you name ur dotfiles)string (req)
@@ -70,8 +72,10 @@ const pull_number = process.env.PR_NUMBER;
         console.log(`Checking `, e);
         //  if (already_thrown) return;
         try {
+          console.log(`Validation??`)
           validate(e);
         } catch (e) {
+          console.error(e)
           already_thrown = true;
           commentError(e.message);
         }
