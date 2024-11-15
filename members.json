@@ -8,5 +8,10 @@
     "name": "kierans-nix",
     "distro": "nixos",
     "git": "https://github.com/kcoderhtml/dots"
+  },
+  {
+    "name": "noahUglyPink",
+    "distro": "mint",
+    "git": "https://github.com/PGtheVRguy/hackClubWinter/tree/main/ricathon"
   }
 ]
