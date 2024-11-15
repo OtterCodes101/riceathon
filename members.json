@@ -8,5 +8,10 @@
     "name": "kierans-nix",
     "distro": "nixos",
     "git": "https://github.com/kcoderhtml/dots"
+  },
+  {
+    "name": "askiiart",
+    "distro": "blendos",
+    "git": "https://github.com/askiiart/dotfiles"
   }
 ]
