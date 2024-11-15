@@ -16,9 +16,9 @@ const repo = process.env.REPO_NAME || "riceathon";
 const pull_number = process.env.PR_NUMBER;
 
 // break in line prettier
-  
+
 (async () => {
-console.log(`Checking out PR #${pull_number}`)
+  console.log(`Checking out PR #${pull_number}`);
   const prData = await simpleApiReq(
     `repos/${owner}/${repo}/pulls/${pull_number}`,
     undefined,
