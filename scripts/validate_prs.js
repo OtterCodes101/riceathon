@@ -51,7 +51,7 @@ const pull_number = process.env.PR_NUMBER;
   // TODO: any other props?
   function validate(obj) {
     if (!obj.name) throw "No Name";
-    if (!obj.os) throw "No OS provided";
+    if (!obj.distro) throw "No OS provided";
     if (obj.git && typeof obj.git !== "string") throw "git is not a string";
     if (typeof obj.name !== "string") throw "Name is not a string";
     if (typeof obj.os !== "string") throw "OS is not a string";
@@ -70,14 +70,14 @@ const pull_number = process.env.PR_NUMBER;
     if (Array.isArray(parsed)) {
       parsed.forEach((e) => {
         console.log(`Checking `, e);
-        //  if (already_thrown) return;
+          if (already_thrown) return;
         try {
           console.log(`Validation??`);
           validate(e);
         } catch (e) {
           console.error(e);
           already_thrown = true;
-          commentError(e.message);
+          commentError(e.toString());
         }
       });
     } else {
