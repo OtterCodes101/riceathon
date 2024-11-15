@@ -14,6 +14,7 @@ const simpleApiReq = (r, method, data, headers) => {
 const owner = process.env.OWNER_NAME || "hackclub";
 const repo = process.env.REPO_NAME || "riceathon";
 const pull_number = process.env.PR_NUMBER;
+console.log(`Checking out PR #${pull_number}`)
 (async () => {
   const prData = await simpleApiReq(
     `repos/${owner}/${repo}/pulls/${pull_number}`,
@@ -63,7 +64,8 @@ const pull_number = process.env.PR_NUMBER;
     let parsed = JSON.parse(members);
     if (Array.isArray(parsed)) {
       parsed.forEach((e) => {
-        if (already_thrown) return;
+console.log(`Checking `, e)
+      //  if (already_thrown) return;
         try {
           validate(e);
         } catch (e) {
