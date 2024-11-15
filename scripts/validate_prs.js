@@ -14,7 +14,11 @@ const simpleApiReq = (r, method, data, headers) => {
 const owner = process.env.OWNER_NAME || "hackclub";
 const repo = process.env.REPO_NAME || "riceathon";
 const pull_number = process.env.PR_NUMBER;
-console.log(`Checking out PR #${pull_number}`)(async () => {
+
+// break in line prettier
+  
+(async () => {
+console.log(`Checking out PR #${pull_number}`)
   const prData = await simpleApiReq(
     `repos/${owner}/${repo}/pulls/${pull_number}`,
     undefined,
