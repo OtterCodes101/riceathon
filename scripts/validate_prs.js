@@ -33,7 +33,7 @@ const pull_number = process.env.PR_NUMBER;
     });
   }
   const commentError = (message) => {
-console.debug("#commentError")
+    console.debug("#commentError");
     simpleApiReq(
       `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
       "POST",
@@ -42,7 +42,7 @@ console.debug("#commentError")
         body: message,
       },
     );
-  }
+  };
   // validate members.json file
   // schema
   // name -> GH username here (ex: John Does dotfiles or what ever you name ur dotfiles)string (req)
@@ -72,10 +72,10 @@ console.debug("#commentError")
         console.log(`Checking `, e);
         //  if (already_thrown) return;
         try {
-          console.log(`Validation??`)
+          console.log(`Validation??`);
           validate(e);
         } catch (e) {
-          console.error(e)
+          console.error(e);
           already_thrown = true;
           commentError(e.message);
         }
