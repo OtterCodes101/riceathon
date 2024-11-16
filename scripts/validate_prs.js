@@ -74,7 +74,7 @@ const pull_number = process.env.PR_NUMBER;
     if (Array.isArray(parsed)) {
       for (const e of parsed) {
         console.log(`Checking `, e);
-//        if (already_thrown) throw e;
+        //        if (already_thrown) throw e;
         try {
           console.log(`Validation??`);
           validate(e);
@@ -84,17 +84,17 @@ const pull_number = process.env.PR_NUMBER;
           commentError(e.toString());
         }
       }
-  if (already_thrown) throw "Failed";
-  else {
-simpleApiReq(
-      `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
-      "POST",
-      {
-        event: "APPROVE",
-        body: "All tests passed",
-      },
-    )
-}
+      if (already_thrown) throw "Failed";
+      else {
+        simpleApiReq(
+          `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
+          "POST",
+          {
+            event: "APPROVE",
+            body: "All tests passed",
+          },
+        );
+      }
     } else {
       commentError(`Its not an array `);
     }
