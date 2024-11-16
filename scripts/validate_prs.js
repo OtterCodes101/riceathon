@@ -84,7 +84,7 @@ const pull_number = process.env.PR_NUMBER;
           commentError(e.toString());
         }
       }
-      if (already_thrown) throw "Failed";
+     
       else {
         simpleApiReq(
           `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
@@ -99,6 +99,9 @@ const pull_number = process.env.PR_NUMBER;
       commentError(`Its not an array `);
     }
   } catch (e) {
-    commentError("Broken JSON:\n```" + e.message + "```");
+    commentError("Broken JSON:\n```" + e.toString() + "```");
   }
+ if (already_thrown) {
+process.exit(1)
+};
 })();
