@@ -13,7 +13,8 @@
     "name": "noahUglyPink",
     "distro": "mint",
     "git": "https://github.com/PGtheVRguy/hackClubWinter/tree/main/ricathon"
-  }, {
+  },
+  {
     "name": "leanghok-cozy",
     "distro": "arch",
     "git": "https://github.com/leanghok120/Dotfiles"
