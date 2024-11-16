@@ -81,29 +81,25 @@ const pull_number = process.env.PR_NUMBER;
         } catch (e) {
           console.error(e);
           already_thrown = e;
-        await  commentError(e.toString());
+          await commentError(e.toString());
         }
       }
     } else {
-     await commentError(`Its not an array `);
+      await commentError(`Its not an array `);
     }
-      
-      
-     
-      
-}  catch (e) {
-   await commentError("Broken JSON:\n```" + e.toString() + "```");
+  } catch (e) {
+    await commentError("Broken JSON:\n```" + e.toString() + "```");
   }
- if (already_thrown) {
-process.exit(1)
-} else {
-  await simpleApiReq(
-          `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
-          "POST",
-          {
-            event: "APPROVE",
-            body: "All tests passed",
-          },
-        );
-};
+  if (already_thrown) {
+    process.exit(1);
+  } else {
+    await simpleApiReq(
+      `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
+      "POST",
+      {
+        event: "APPROVE",
+        body: "All tests passed",
+      },
+    );
+  }
 })();
