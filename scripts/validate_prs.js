@@ -58,7 +58,7 @@ const pull_number = process.env.PR_NUMBER;
     if (!obj.distro) throw "No OS provided";
     if (obj.git && typeof obj.git !== "string") throw "git is not a string";
     if (typeof obj.name !== "string") throw "Name is not a string";
-    if (typeof obj.os !== "string") throw "OS is not a string";
+    if (typeof obj.distro !== "string") throw "OS is not a string";
     if (
       obj.git &&
       typeof obj.git === "string" &&
@@ -74,16 +74,27 @@ const pull_number = process.env.PR_NUMBER;
     if (Array.isArray(parsed)) {
       for (const e of parsed) {
         console.log(`Checking `, e);
-        if (already_thrown) return;
+//        if (already_thrown) throw e;
         try {
           console.log(`Validation??`);
           validate(e);
         } catch (e) {
           console.error(e);
-          already_thrown = true;
+          already_thrown = e;
           commentError(e.toString());
         }
       }
+  if (already_thrown) throw "Failed";
+  else {
+simpleApiReq(
+      `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
+      "POST",
+      {
+        event: "APPROVE",
+        body: "All tests passed",
+      },
+    )
+}
     } else {
       commentError(`Its not an array `);
     }
