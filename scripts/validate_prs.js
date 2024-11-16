@@ -37,7 +37,7 @@ const pull_number = process.env.PR_NUMBER;
   const commentError = (message) => {
     console.debug("#commentError");
     simpleApiReq(
-      `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
+      `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
       "POST",
       {
         event: "REQUEST_CHANGES",
