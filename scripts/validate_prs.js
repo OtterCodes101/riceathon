@@ -7,7 +7,7 @@ const simpleApiReq = (r, method, data, headers) => {
     headers: {
       ...(headers ?? {}),
       Accept: "application/vnd.github+json",
-      Authorization: process.env.GITHUB_TOKEN,
+      Authorization: "Bearer " + process.env.GITHUB_TOKEN,
     },
     body: data ? JSON.stringify(data) : undefined,
   }).then((r) => r.json());
