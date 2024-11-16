@@ -81,12 +81,23 @@ const pull_number = process.env.PR_NUMBER;
         } catch (e) {
           console.error(e);
           already_thrown = e;
-          commentError(e.toString());
+        await  commentError(e.toString());
         }
       }
+    } else {
+     await commentError(`Its not an array `);
+    }
+      
+      
      
-      else {
-        simpleApiReq(
+      
+}  catch (e) {
+   await commentError("Broken JSON:\n```" + e.toString() + "```");
+  }
+ if (already_thrown) {
+process.exit(1)
+} else {
+  await simpleApiReq(
           `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
           "POST",
           {
@@ -94,14 +105,5 @@ const pull_number = process.env.PR_NUMBER;
             body: "All tests passed",
           },
         );
-      }
-    } else {
-      commentError(`Its not an array `);
-    }
-  } catch (e) {
-    commentError("Broken JSON:\n```" + e.toString() + "```");
-  }
- if (already_thrown) {
-process.exit(1)
 };
 })();
