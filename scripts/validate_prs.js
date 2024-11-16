@@ -91,7 +91,9 @@ const pull_number = process.env.PR_NUMBER;
     await commentError("Broken JSON:\n```" + e.toString() + "```");
   }
   if (already_thrown) {
-    process.exit(1);
+ setTimeout(() => {
+   process.exit(1);
+}, 5 * 1000)
   } else {
     await simpleApiReq(
       `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
