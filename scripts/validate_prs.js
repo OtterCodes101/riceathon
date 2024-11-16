@@ -1,7 +1,7 @@
 // using node-fetch instead of octokit.
 const fs = require("fs");
 const simpleApiReq = (r, method, data, headers) => {
-console.debug("#req")
+  console.debug("#req");
   return fetch("https://api.github.com/" + r, {
     method: method || "GET",
     headers: {
@@ -28,7 +28,7 @@ const pull_number = process.env.PR_NUMBER;
       Accept: "application/vnd.github.text+json",
     },
   );
-console.debug(prData)
+  console.debug(prData);
   if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
     simpleApiReq(`repos/${owner}/${repo}/issues/${pr_number}/labels`, "POST", {
       labels: ["rice-setup"],
@@ -43,7 +43,9 @@ console.debug(prData)
         event: "REQUEST_CHANGES",
         body: message,
       },
-    ).then(console.debug).catch(console.error);
+    )
+      .then(console.debug)
+      .catch(console.error);
   };
   // validate members.json file
   // schema
@@ -70,7 +72,7 @@ console.debug(prData)
   try {
     let parsed = JSON.parse(members);
     if (Array.isArray(parsed)) {
-   for(const e of parsed) {
+      for (const e of parsed) {
         console.log(`Checking `, e);
         if (already_thrown) return;
         try {
