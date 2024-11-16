@@ -8,5 +8,10 @@
     "name": "kierans-nix",
     "distro": "nixos",
     "git": "https://github.com/kcoderhtml/dots"
+  },
+  {
+    "name": "leanghok-cozy",
+    "distro": "arch",
+    "git": "https://github.com/leanghok120/Dotfiles"
   }
 ]
