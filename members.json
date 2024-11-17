@@ -25,8 +25,8 @@
     "git": "https://github.com/leanghok120/Dotfiles"
   },
   {
-   "name": "pixel-city",
-   "distro": "alpine",
+    "name": "pixel-city",
+    "distro": "alpine",
     "git": "https://github.com/fluxc0/therealdots"
   }
 ]
