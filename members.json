@@ -28,5 +28,10 @@
     "name": "pixel-city",
     "distro": "alpine",
     "git": "https://github.com/fluxc0/therealdots"
+  },
+  {
+    "name": "bunnyguy",
+    "distro": "pop!_os",
+    "git": "https://github.com/snipchu/dotfiles"
   }
 ]
