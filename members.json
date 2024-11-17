@@ -38,5 +38,10 @@
     "name": "TuinboonDev",
     "distro": "arch",
     "git": "https://github.com/TuinboonDev/.files"
+  },
+  {
+    "name": "Cyao",
+    "distro": "arch",
+    "git": "https://github.com/cheyao/hyprland"
   }
 ]
