@@ -43,5 +43,10 @@
     "name": "cheyao",
     "distro": "arch",
     "git": "https://github.com/cheyao/hyprland"
+  },
+  {
+    "name": "neonrowan",
+    "distro": "fedora",
+    "git" : "https://github.com/GearBoxFox/dotfiles"
   }
 ]
