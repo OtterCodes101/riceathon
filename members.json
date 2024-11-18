@@ -43,5 +43,10 @@
     "name": "cheyao",
     "distro": "arch",
     "git": "https://github.com/cheyao/hyprland"
+  },
+  {
+    "name": "TheTridentGuy",
+    "distro": "raspbian",
+    "git": "https://github.com/TheTridentGuy/RaspbianRice/"
   }
 ]
