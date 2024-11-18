@@ -47,6 +47,6 @@
   {
     "name": "neonrowan",
     "distro": "fedora",
-    "git" : "https://github.com/GearBoxFox/dotfiles"
+    "git": "https://github.com/GearBoxFox/dotfiles"
   }
 ]
