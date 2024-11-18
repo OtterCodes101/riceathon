@@ -58,5 +58,5 @@
     "name": "StatusCritical",
     "distro": "arch",
     "git": "https://github.com/StatusCritical/.config"
-  },
+  }
 ]
