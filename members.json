@@ -48,7 +48,8 @@
     "name": "TheTridentGuy",
     "distro": "raspbian",
     "git": "https://github.com/TheTridentGuy/RaspbianRice/"
-  }, {
+  },
+  {
     "name": "firepup650",
     "distro": "debian",
     "git": "https://git.h.hackclub.app/Firepup650/dotfiles"
