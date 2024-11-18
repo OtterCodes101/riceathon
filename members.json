@@ -58,5 +58,10 @@
     "name": "neonrowan",
     "distro": "fedora",
     "git": "https://github.com/GearBoxFox/dotfiles"
+  },
+  {
+    "name": "StatusCritical",
+    "distro": "arch",
+    "git": "https://github.com/StatusCritical/.config"
   }
 ]
