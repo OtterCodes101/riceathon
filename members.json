@@ -63,5 +63,10 @@
     "name": "StatusCritical",
     "distro": "arch",
     "git": "https://github.com/StatusCritical/.config"
+  },
+  {
+    "name": "xriiitox",
+    "distro": "endeavouros",
+    "git": "https://github.com/xriiitox/dwm"
   }
 ]
