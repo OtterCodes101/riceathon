@@ -68,5 +68,10 @@
     "name": "xriiitox",
     "distro": "endeavouros",
     "git": "https://github.com/xriiitox/dwm"
+  },
+  {
+    "name": "iris",
+    "distro": "endeavouros",
+    "git": "https://github.com/Iris-TheRainbow/dotfiles"
   }
 ]
