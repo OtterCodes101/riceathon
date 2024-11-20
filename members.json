@@ -73,5 +73,10 @@
     "name": "iris",
     "distro": "endeavouros",
     "git": "https://github.com/Iris-TheRainbow/dotfiles"
+  },
+  {
+    "name": "CyrilSLi",
+    "distro": "fedora",
+    "git": "https://github.com/CyrilSLi/linux-scripts"
   }
 ]
