@@ -83,5 +83,10 @@
     "name": "BeachBunnyTheme",
     "distro": "mint",
     "git": "https://github.com/BoomBoomMushroom/DillionRice-LinuxMint"
+  },
+  {
+    "name": "Mei Misaki My Beloved",
+    "distro": "arch",
+    "git": "https://github.com/Circuitbreaker08/Mei-Misaki-My-Beloved"
   }
 ]
