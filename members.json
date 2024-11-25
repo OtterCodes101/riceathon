@@ -88,5 +88,10 @@
     "name": "Mei Misaki My Beloved",
     "distro": "arch",
     "git": "https://github.com/Circuitbreaker08/Mei-Misaki-My-Beloved"
+  },
+  {
+    "name": "Nooz",
+    "distro": "mint",
+    "git": "https://github.com/NoozAbooz/dotfiles"
   }
 ]
