@@ -98,5 +98,9 @@
     "name": "Nooz",
     "distro": "mint",
     "git": "https://github.com/NoozAbooz/dotfiles"
+  },
+  { "name": "Cyclic",
+    "distro": "arch",
+    "git": "https://github.com/Cyclic007/Arch-Rice/tree/main"
   }
 ]
