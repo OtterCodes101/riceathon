@@ -1,5 +1,10 @@
 [
   {
+    "name": "ILikeMice",
+    "distro": "arch",
+    "git": "https://github.com/ILikeMice/firstrice"
+  },
+  {
     "name": "Volkov",
     "distro": "arch",
     "git": "https://github.com/Volkov08/firstricedots"
