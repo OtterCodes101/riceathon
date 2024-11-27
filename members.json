@@ -103,5 +103,10 @@
     "name": "Cyclic",
     "distro": "arch",
     "git": "https://github.com/Cyclic007/Arch-Rice/tree/main"
+  },
+  {
+    "name": "Dragon863",
+    "distro": "debian",
+    "git": "https://github.com/Dragon863/i3-rice"
   }
 ]
