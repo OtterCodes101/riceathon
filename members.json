@@ -113,5 +113,10 @@
     "name": "Dragon863",
     "distro": "debian",
     "git": "https://github.com/Dragon863/i3-rice"
+  },
+  {
+    "name": "swarsin",
+    "distro": "arch",
+    "git": "https://github.com/Swarsin/dotfiles"
   }
 ]
