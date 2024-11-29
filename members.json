@@ -110,24 +110,13 @@
     "git": "https://github.com/Cyclic007/Arch-Rice/tree/main"
   },
   {
-
     "name": "Magical Paperclip",
     "distro": "raspbian",
     "git": "https://github.com/magical-paperclip/-magical-paperclip-riceathon"
-  }, {
+  },
+  {
     "name": "Dragon863",
     "distro": "debian",
     "git": "https://github.com/Dragon863/i3-rice"
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
